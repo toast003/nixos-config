@@ -102,15 +102,16 @@
 		# GUI Apps.
 		discord-canary
 		firefox
-		steam
+		# Steam needs to be enabled with programs.steam.enable
+		# Noisetorch needs to be enabled with programs.noisetorch.enable
 		keepassxc
-		noisetorch
 		
 		# Optional dependencies.
 		xclip # Use system clipboard on micro.
     ];  	
   };
-
+  programs.steam.enable = true;
+  programs.noisetorch.enable = true;
   
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
