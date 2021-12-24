@@ -30,6 +30,7 @@
   environment.systemPackages = with pkgs; [
 	# Gnome extensions.
 	gnomeExtensions.ddterm
+	gjs # For some reason gjs in not installed by default, and ddterm needs it
 	gnomeExtensions.jiggle
 	gnomeExtensions.appindicator
 	gnomeExtensions.better-osd-gnome-40
