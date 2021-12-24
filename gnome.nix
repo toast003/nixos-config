@@ -14,6 +14,10 @@
   		# Enable Gnome extentions
 		[org.gnome.shell]
   		enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'better-osd@hllvc', 'blur-my-shell@aunetx', 'display-brightness-ddcutil@themightydeity.github.com', 'caffeine@patapon.info', 'ddterm@amezin.github.com', 'fullscreen-notifications@sorrow.about.alice.pm.me', 'gnome-ui-tune@itstime.tech', 'gsconnect@andyholmes.github.io', 'drive-menu@gnome-shell-extensions.gcampax.github.com', 'sound-output-device-chooser@kgshank.net', 'syncthing@gnome.2nv2u.com', 'workspace-indicator@gnome-shell-extensions.gcampax.github.com']
+		
+		# Set "Menu" key to toggle ddterm
+		[com.github.amezin.ddterm]
+		ddterm-toogle-hotkey=['Menu']
   	'';
   	 extraGSettingsOverridePackages = [
   	 	pkgs.gsettings-desktop-schemas
