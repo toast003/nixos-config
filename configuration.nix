@@ -25,9 +25,9 @@
   
   boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
 
-  # networking.hostName = "nixos"; # Define your hostname.
   networking.hostName = "nix";
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+  networking.wireless.enable = false;  # Disable wpa_supplicant.
+  networking.networkmanager.enable = true;
 
   # Set your time zone.
   # time.timeZone = "Europe/Amsterdam";
